@@ -1,0 +1,25 @@
+{
+  "name": "myodata",
+  "version": "1.0.0",
+  "description": "website to hold data from myo",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helensee/myodata.git"
+  },
+  "author": "Helen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helensee/myodata/issues"
+  },
+  "homepage": "https://github.com/helensee/myodata#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "content-disposition": "^0.5.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
