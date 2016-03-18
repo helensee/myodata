@@ -3,7 +3,7 @@ var router = express.Router();
 
 var app = express();
 app.set('view engine', 'ejs');
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8080));
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function(req, res) {
