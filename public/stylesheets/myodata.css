@@ -1,0 +1,94 @@
+.navbar-default{
+	background-color: #031a26;
+	border-color: #031a26;
+	
+}
+
+.navbar-default .navbar-nav>li>a {
+	color:#00bbde;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color:#fc9223;
+}
+
+#jumbotron{
+	height: 300px;
+	background-color:#00bbde;
+	text-align: center;
+	color: #031a26;
+	font-weight: 700
+}
+
+#jumbotron h1{
+	font-size: 36px;
+    margin-top: 13rem;
+}
+
+#jumbotron h2{
+	font-size: 24px;
+}
+
+#myo-status{
+	margin-top: 10px;
+	color:#fc9223;
+}
+
+#info{
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#profile{
+	float: left;
+	height: 450px;
+	width: 300px;
+	border: solid 1px #000000;
+	margin: 25px 50px 50px 50px;
+	text-align: center;
+}
+
+#profile select{
+	margin-top: 20px;
+}
+
+#picture{
+	height: 200px;
+	width: 200px;
+	border: solid 1px #000000;
+	margin: 0.5rem 4.5rem 10px 4.5rem;
+}
+
+#information{
+	width: 200px;
+	height: 175px;
+	border: solid 1px #000000;
+	padding: 5px;
+	margin: 5px 4.5rem;
+}
+
+#myo-data{
+	float: right;
+	height: 450px;
+	width: 750px;
+	border: solid 1px #000000;
+	margin: 25px 50px 50px 50px;
+}
+
+#session-history{
+	float: left;
+	width: 300px;
+	height: 175px;
+	border: solid 1px #000000;
+	margin: 0 50px 50px 50px;
+	text-align: center;
+}
+
+#session-history h1{
+	font-size: 22px;
+}
+
+.table>thead>tr>th{
+	text-align: center;
+}
