@@ -14,6 +14,7 @@ app.get('/', function(req, res) {
 app.listen(8080);
 
 
+//CODE TO READ CSV FILE
 console.log("CSV starts here!");
 var people = [];
 var fileContents = fs.readFileSync('test.csv');
