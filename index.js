@@ -8,10 +8,11 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('port', (process.env.PORT || 8080));
 app.use(express.static(__dirname + '/'));
-
+/*
 app.get('/', function(req, res) {
     res.render('pages/index');
 });
+*/
 app.listen(8080);
 
 //DB STUFF
@@ -23,7 +24,8 @@ var db = new sqlite3.Database(file);
 db.serialize(function() {
 	console.log("doing db stuff!");
 	if(!exists) {
-		db.run("CREATE TABLE Stuff (thing TEXT)");
+		//db.run("CREATE TABLE Stuff (thing TEXT)");
+		db.run("CREATE TABLE timedata")
 	}
 	/*
 	var stmt = db.prepare("INSERT INTO Stuff VALUES (?)");
@@ -42,9 +44,33 @@ db.serialize(function() {
 	  });
 });
 
+app.get('/', function(request, response) {
+	//CODE TO READ CSV FILE
+	// we will init db stuff
+	console.log("CSV starts here!");
+	var data = [];
+	var fileContents = fs.readFileSync('test.csv');
+	var lines = fileContents.toString().split('\n');
+
+	for (var i = 0; i < lines.length; i++) {
+	    data.push(lines[i].toString().split(','));
+	}
+
+	for (var i = 0; i < lines.length; i++) {
+	    for (var j = 0; j < 5; j++) {
+	        //console.log(data[i][j]);
+	    }
+	    //console.log('\n');
+	}
+	response.render('pages/index.ejs', {
+		data: data
+	});
+
+});
+
 db.close();
 
-
+/*
 //CODE TO READ CSV FILE
 console.log("CSV starts here!");
 var data = [];
@@ -61,3 +87,21 @@ for (var i = 0; i < lines.length; i++) {
     }
     //console.log('\n');
 }
+*/
+
+/**
+//Perform SELECT Operation
+db.all("SELECT * from blah blah blah where this="+that,function(err,rows){
+//rows contain values while errors, well you can figure out.
+});
+
+//Perform INSERT operation.
+db.run("INSERT into table_name(col1,col2,col3) VALUES (val1,val2,val3)");
+
+//Perform DELETE operation
+db.run("DELETE * from table_name where condition");
+
+//Perform UPDATE operation
+db.run("UPDATE table_name where condition");
+
+*/
