@@ -17,7 +17,7 @@
 		<table class="table">
     		<thead>
       			<tr>
-        			<th>Session Date</th>
+        			<th>Session Timestamp</th>
         			<th>X-coordinate</th>
         			<th>Y-coordinate</th>
         			<th>Z-coordinate</th>
@@ -25,28 +25,16 @@
       			</tr>
     		</thead>
     		<tbody>
-     			 <tr>
-        			<td>1</td>
-        			<td>2</td>
-        			<td>3</td>
-        			<td>4</td>
-        			<td>5</td>
-      			</tr>
-      			<tr>
-        			<td>1</td>
-        			<td>2</td>
-        			<td>3</td>
-        			<td>4</td>
-        			<td>5</td>
-
-      			</tr>
-      			<tr>
-        			<td>1</td>
-        			<td>2</td>
-        			<td>3</td>
-        			<td>4</td>
-        			<td>5</td>
-      			</tr>
+     			 <% data.forEach(function(re) {%>
+             <tr>
+              <td><%= re.Timestamp %></td>
+              <td><%= re.x %></td>
+              <td><%= re.y %></td>
+              <td><%= re.z %></td>
+              <td><%= re.w %></td>
+            </tr>
+          <% }); %>
+      			
     		</tbody>
   		</table>
 	</div>
