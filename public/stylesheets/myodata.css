@@ -70,8 +70,8 @@
 
 #myo-data{
 	float: right;
-	height: 450px;
-	width: 750px;
+	/*height: 450px;
+	*/width: 750px;
 	border: solid 1px #000000;
 	margin: 25px 50px 50px 50px;
 }
