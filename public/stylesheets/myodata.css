@@ -1,5 +1,5 @@
 .navbar-default{
-	background-color: #031a26;
+	background-color: #073f5d;
 	border-color: #031a26;
 	
 }
@@ -12,7 +12,7 @@
 	color:#fc9223;
 }
 
-#jumbotron{
+#dashboard-jumbotron{
 	height: 300px;
 	background-color:#00bbde;
 	text-align: center;
@@ -20,12 +20,12 @@
 	font-weight: 700
 }
 
-#jumbotron h1{
+#dashboard-jumbotron h1{
 	font-size: 36px;
     margin-top: 13rem;
 }
 
-#jumbotron h2{
+#dashboard-jumbotron h2{
 	font-size: 24px;
 }
 
@@ -92,3 +92,52 @@
 .table>thead>tr>th{
 	text-align: center;
 }
+
+
+
+/* landing page */
+
+#jumbotron{
+	height: 650px;
+	background-color:#f9f9f9;
+	text-align: center;
+	color: #031a26;
+	font-weight: 700
+}
+
+#about, #sign-up{
+	height: 575px;
+	color:#00bbde;
+	text-align: center;
+	background-color: #031a26;
+	margin-top: -2rem;
+}
+
+#about > h1, #about-2 > h1, #sign-up > h1{
+	padding-top: 5rem;
+}
+
+#about-2{
+	height: 575px;
+	background-color:#00bbde;
+	text-align: center;
+	color: #031a26;
+	margin-top: -2rem;
+}
+
+#footer{
+	background-color: #073f5d;
+	position: relative;
+	height: 10rem;
+}
+
+#footer a{
+	color: #ff80b2;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	color: #aeeaae;
+}
+
+

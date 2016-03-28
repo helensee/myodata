@@ -62,7 +62,7 @@ app.get('/', function(request, response) {
 	    }
 	    //console.log('\n');
 	}
-	response.render('pages/index.ejs', {
+	response.render('pages/landing.ejs', {
 		data: data
 	});
 
